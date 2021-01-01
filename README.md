@@ -1,1 +1,1 @@
-# blogs
+# https://dengzhao7053.github.io/blogs/

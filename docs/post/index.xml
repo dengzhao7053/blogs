@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jan 2021 21:53:35 +0800</lastBuildDate><atom:link href="https://dengzhao7053.github.io/blogs/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
+      <title>First blog</title>
       <link>https://dengzhao7053.github.io/blogs/post/first/</link>
       <pubDate>Fri, 01 Jan 2021 21:53:35 +0800</pubDate>
       
       <guid>https://dengzhao7053.github.io/blogs/post/first/</guid>
-      <description>hello hugo  aaa bbb ccc  </description>
+      <description>hello hugo Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+安装流程请移步官方文档.</description>
     </item>
     
   </channel>
