@@ -15,5 +15,7 @@ date: 2021-01-01T21:53:35+08:00
 ### 生成站点
 
 使用Hugo快速生成站点，比如希望生成到`/workspace/website/path`路径:
-```$ hugo new site /workspace/website/path```
-这样就在/workspace/website/path下生成了站点
+
+``` $ hugo new site /workspace/website/path ```
+
+这样就在/workspace/website/path下生成了站点。

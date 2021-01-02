@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 publishDir = "docs"
 theme = "hyde"
+
+[params]
+  themeColor = "theme-base-0c"
