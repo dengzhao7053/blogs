@@ -5,4 +5,4 @@ publishDir = "docs"
 theme = "hyde"
 
 [params]
-  themeColor = "theme-base-0c"
+  themeColor = "theme-base-08"
