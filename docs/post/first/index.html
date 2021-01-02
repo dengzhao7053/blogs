@@ -62,6 +62,41 @@
 <p>使用Hugo快速生成站点，比如希望生成到<code>/workspace/website/path</code>路径:</p>
 <p><code>$ hugo new site /workspace/website/path</code></p>
 <p>这样就在/workspace/website/path下生成了站点。</p>
+<h3 id="创建文章">创建文章</h3>
+<p>创建一个<code>about</code>页面：</p>
+<p><code> $ hugo new about.md</code></p>
+<p><code>about.md</code>自动生成在<code>content/about.md</code>。内容如下：</p>
+<pre><code>---
+title: &quot;About&quot;
+date: 2021-01-01T21:49:06+08:00
+---
+正文内容
+</code></pre><p>内容是<code>Markdown</code>格式，<code>---</code>之间的内容是YAML格式，根据你的喜好可以换成TOML格式（使用<code>++++</code>标记）或者<code>JSON</code>格式。</p>
+<p>创建第一篇文章，放到<code>post</code>目录下，方便之后生成聚合页面。</p>
+<p><code> $ hugo new post/first.md</code></p>
+<p>使用编辑器打开<code>post/first.md</code>，即可编辑内容。</p>
+<h3 id="安装皮肤">安装皮肤</h3>
+<p>到<a href="https://themes.gohugo.io/">皮肤列表</a>挑选一个心仪的皮肤，找到相关的<code>GitHub</code>地址，在站点根目录下创建<code>themes</code>目录，在<code>themes</code>中把皮肤<code>git clone</code>下来，这里以Hyde皮肤为例：</p>
+<pre><code>$ mkdir themes
+$ cd themes
+$ git clone https://github.com/spf13/hyde.git
+</code></pre><h3 id="运行hugo">运行Hugo</h3>
+<p>在你的站点根目录执行<code>Hugo</code>命令行进行调试：</p>
+<p><code> $ hugo server --theme=hyde --buildDrafts</code></p>
+<p>在浏览器中打开：<code>http://localhost:1313</code>，即可浏览效果。</p>
+<h3 id="部署到github-pages">部署到GitHub Pages</h3>
+<p>部署到<code>GitHub Pages</code>也比较简单。大致可分为以下几步：</p>
+<ol>
+<li><code>GitHub</code>上创建仓库</li>
+<li>站点根目录执行<code>hugo</code>命令生成最终页面</li>
+<li>使用<code>git init</code>将站点初始化为一个<code>git</code>仓库</li>
+<li>修改<code>config</code>文件</li>
+<li>将本地代码<code>push</code>到刚创建的仓库的<code>master</code>分支</li>
+<li>指定<code>GitHub</code>上仓库<code>github pages</code>设置项的source</li>
+<li>浏览器里访问</li>
+</ol>
+<p>因为有不同的部署方式，所以不仔细展开。具体流程请参考<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">github部署官方文档</a>。</p>
+<p>到此，一个简单的静态站点就搭建完毕了。</p>
 </div>
 
 
