@@ -12,3 +12,10 @@ summaryLength = 1
 
 [params]
   themeColor = "theme-base-08"
+
+[Menus]
+  main = [
+    {Name = "Series", URL = "/series"},
+    {Name = "categories", URL = "/categories"},
+    {Name = "Tags", URL = "/tags"}
+  ]
