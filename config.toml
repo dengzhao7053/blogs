@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 publishDir = "docs"
 theme = "hyde"
-summaryLength = 1
 
 [taxonomies]
   tag = "tags"
@@ -12,10 +11,12 @@ summaryLength = 1
 
 [params]
   themeColor = "theme-base-08"
+  description = "Less code, less bug!"
+  copyright = "© dengzhao7053"
 
 [Menus]
   main = [
     {Name = "Series", URL = "/series"},
-    {Name = "categories", URL = "/categories"},
+    {Name = "Categories", URL = "/categories"},
     {Name = "Tags", URL = "/tags"}
   ]
