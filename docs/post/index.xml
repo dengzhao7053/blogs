@@ -18,8 +18,7 @@
 搭建静态blog的第一步就是在本地安装Hugo，安装流程请移步官方文档。安装过程中如遇需要使用Homebrew及Linuxbrew镜像，请移步镜像使用帮助。
 安装完成使用 hugo version 命令来检查是否安装成功。
 生成站点 使用Hugo快速生成站点，比如希望生成到/workspace/website/path路径:
-$ hugo new site /workspace/website/path
-这样就在/workspace/website/path下生成了站点。</description>
+$ hugo new site /workspace/website/path</description>
     </item>
     
   </channel>
