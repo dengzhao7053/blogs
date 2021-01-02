@@ -4,6 +4,7 @@ title = "My New Hugo Site"
 publishDir = "docs"
 theme = "hyde"
 summaryLength = 1
+hasCJKLanguage = true
 
 [params]
   themeColor = "theme-base-08"
