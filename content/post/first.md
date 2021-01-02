@@ -2,7 +2,9 @@
 title: "使用Hugo和GitHub搭建免费静态Blog"
 date: 2021-01-01T21:53:35+08:00
 summary: "搭建一个属于自己的Blog，快来行动吧！"
-tag: "website"
+categories: ["website"]
+tags: ["hugo","website"]
+series: ["Go Web Dev"]
 ---
 
 2021年的第一天，在xdm的帮助下完成了静态blog的搭建。话不多说，教程奉上。

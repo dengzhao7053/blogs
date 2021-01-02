@@ -5,5 +5,10 @@ publishDir = "docs"
 theme = "hyde"
 summaryLength = 1
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
 [params]
   themeColor = "theme-base-08"

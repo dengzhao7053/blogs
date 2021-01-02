@@ -5,6 +5,16 @@
     <link>https://dengzhao7053.github.io/blogs/categories/</link>
     <description>Recent content in Categories on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://dengzhao7053.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 21:53:35 +0800</lastBuildDate><atom:link href="https://dengzhao7053.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>website</title>
+      <link>https://dengzhao7053.github.io/blogs/categories/website/</link>
+      <pubDate>Fri, 01 Jan 2021 21:53:35 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/categories/website/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
