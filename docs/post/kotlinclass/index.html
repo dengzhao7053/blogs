@@ -81,10 +81,30 @@
 <p>在<code>Java</code>平台类库中，有许多明显违反这条原则的地方。例如，栈<code>（stack）</code>并不是向量<code>（vector）</code>，所以<code>Stack</code>不应该扩展<code>Vector</code>。同样地，属性列表也不是散列表，所以<code>Properties</code>不应该扩展<code>Hashtable</code>。在这两种情况下，复合模式才是恰当的。</p>
 <p>如果在适合使用复合的地方使用了继承，则会不必要地暴露实现细节。这样得到的API会把你限制在原始的实现上，永远限定了类的性能。更为严重的是，由于暴露了内部的细节，客户端就有可能直接访问这些内部细节。这样至少会导致语义上的混淆。例如，如果<code>p</code>指向<code>Properties</code>实例，那么<code>p.getProperty(key)</code>就有可能产生与<code>p.get(key)</code>不同的结果：前者考虑了默认的属性表，而后者是继承自<code>Hashtable</code>的，它则没有考虑默认属性列表。最严重的是，客户端有可能直接修改超类，从而破坏子类的约束条件。在<code>Properties</code>的情形中，设计者的目标是，只允许字符串作为键<code>（key）</code>和值<code>（value）</code>，但是直接访问底层的<code>Hashtable</code>就可以违背这种约束条件。一旦违背了这种约束条件，就不可能再使用<code>Properties API</code>的其它部分<code>（load和store）</code>了。</p>
 <p>简而言之，继承的功能非常强大，但是也存在着诸多问题，因为它违背了封装原则。只有当子类和超类之间确实存在子类型关系时，使用继承才是恰当的。即便如此，如果子类和超类处在不同的包中，并且超类并不是为了继承而设计的，那么继承将会导致脆弱性。为了避免这种脆弱性，可以用复合和转发机制来代替继承，尤其是当存在适当的接口可以实现包装类的时候。包装类不仅比子类更加健壮，而且功能也更加强大。</p>
-<p>所以，<code>Kotlin</code>中将类设计成final类型时为了提醒开发者慎用继承，如果你考虑清楚确实需要使用继承，那么就给类加<code>open</code>关键字吧！`</p>
+<p>所以，<code>Kotlin</code>中将类设计成final类型时为了提醒开发者慎用继承，如果你考虑清楚确实需要使用继承，那么就给类加<code>open</code>关键字吧！</p>
 </div>
 
-
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-dengzhao7053-github-io-blogs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </main>
 
     

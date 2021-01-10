@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 publishDir = "docs"
 theme = "hyde"
-
+disqusShortname = "https-dengzhao7053-github-io-blogs"
 [taxonomies]
   tag = "tags"
   category = "categories"
