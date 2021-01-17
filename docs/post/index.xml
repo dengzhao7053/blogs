@@ -6,16 +6,7 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 23:37:40 +0800</lastBuildDate><atom:link href="https://dengzhao7053.github.io/blogs/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>对象的内存结构</title>
-      <link>https://dengzhao7053.github.io/blogs/post/object/</link>
-      <pubDate>Sun, 10 Jan 2021 23:37:40 +0800</pubDate>
-      
-      <guid>https://dengzhao7053.github.io/blogs/post/object/</guid>
-      <description>&lt;p&gt;&amp;ldquo;&lt;code&gt;Java&lt;/code&gt;中对象的内存结构是怎样的呢？&amp;rdquo;&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Sat, 02 Jan 2021 23:28:40 +0800</lastBuildDate><atom:link href="https://dengzhao7053.github.io/blogs/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kotlin为什么将class设计成final类型</title>
       <link>https://dengzhao7053.github.io/blogs/post/kotlinclass/</link>
@@ -26,9 +17,27 @@
     </item>
     
     <item>
+      <title>对象的创建</title>
+      <link>https://dengzhao7053.github.io/blogs/post/creatobject/</link>
+      <pubDate>Mon, 30 Mar 2020 11:51:37 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/creatobject/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;是一门面向对象的编程语言，&lt;code&gt;Java&lt;/code&gt;程序运行过程中无时无刻都有对象被创建出来。在语言层面上，创建对象通常（例外：复制、反序列化）仅仅是一个&lt;code&gt;new&lt;/code&gt;关键字而已，而在虚拟机中，普通&lt;code&gt;Java&lt;/code&gt;对象的创建又是怎样一个过程呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>对象的内存结构</title>
+      <link>https://dengzhao7053.github.io/blogs/post/object/</link>
+      <pubDate>Wed, 25 Mar 2020 23:37:40 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/object/</guid>
+      <description>&lt;p&gt;&amp;ldquo;&lt;code&gt;Java&lt;/code&gt;中对象的内存结构是怎样的呢？&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>使用Hugo和GitHub搭建免费静态Blog</title>
       <link>https://dengzhao7053.github.io/blogs/post/first/</link>
-      <pubDate>Fri, 01 Jan 2021 21:53:35 +0800</pubDate>
+      <pubDate>Wed, 01 Jan 2020 21:53:35 +0800</pubDate>
       
       <guid>https://dengzhao7053.github.io/blogs/post/first/</guid>
       <description>&lt;p&gt;&amp;ldquo;搭建一个属于自己的Blog，快来行动吧！&amp;rdquo;&lt;/p&gt;</description>

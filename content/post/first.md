@@ -1,7 +1,7 @@
 ---
 truncated: true
 title: "使用Hugo和GitHub搭建免费静态Blog"
-date: 2021-01-01T21:53:35+08:00
+date: 2020-01-01T21:53:35+08:00
 categories: ["website"]
 tags: ["hugo","website"]
 series: ["Go Web Dev"]
