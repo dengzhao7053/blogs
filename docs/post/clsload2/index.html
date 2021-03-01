@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.79.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>类加载器的双亲委派模型 &middot; My New Hugo Site</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://dengzhao7053.github.io/blogs/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://dengzhao7053.github.io/blogs/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://dengzhao7053.github.io/blogs/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://dengzhao7053.github.io/blogs/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-08 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://dengzhao7053.github.io/blogs/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+       Less code, less bug! 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://dengzhao7053.github.io/blogs/">Home</a> </li>
+        <li><a href="/blogs/post"> All </a></li><li><a href="/blogs/categories"> Categories </a></li><li><a href="/blogs/series"> Series </a></li><li><a href="/blogs/tags"> Tags </a></li>
+      </ul>
+    </nav>
+
+    <p>© dengzhao7053</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>类加载器的双亲委派模型</h1>
+  <time datetime=2020-04-15T23:48:00&#43;0800 class="post-date">Wed, Apr 15, 2020</time>
+  <p>一个类加载器收到了类加载的请求，它该如何去加载这个类呢？</p>
+<p>双亲委派模型的工作过程是：如果一个类加载器收到了类加载的请求，它首先不会自己尝试去加载这个类，而是把这个请求委派给父类加载器去完成，每一个层次的类加载器都是如此，因此所有的加载请求最终都应该传递到顶层的启动类加载器中，只有当父类加载器反馈自己无法完成这个加载请求（它的搜索范围中没有找到所需的类）时，子加载器才会尝试自己去加载。</p>
+<p>双亲委派模型对于保证<code>Java</code>程序的稳定性运作很重要。使用双亲委派模型来组织类加载器之间的关系，有一个显而易见的好处就是<code>Java</code>类随着它的类加载器一起具备了一种带有优先级的层次关系。例如类<code>java.lang.Object</code>，它存放在<code>rt.java</code>之中，无论哪个类加载器要加载这个类，最终都是委派给启动类加载器进行加载，因此<code>Object</code>类在程序的各种类加载器环境中都是同一个类。相反，如果没有使用双亲委派模型，由各个类加载器自行加载的话，如果用户自己写了一个名为<code>java.lang.Object</code>的类，并放在程序的<code>ClassPath</code>中，那系统中将会出现多个不同的<code>Object</code>类，<code>Java</code>类型体系中最基础的行为也就无从保证，应用程序也将会变得一片混乱。</p>
+<p>综上，双亲委派模型的优点如下：</p>
+<ul>
+<li>避免重复加载，当父类加载器已经加载过该类时，子类加载器没必要再重复加载</li>
+<li>安全性考虑，防止核心<code>API</code>库被随意篡改</li>
+</ul>
+<p>附:子加载器和父类加载器是继承关系吗？</p>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
