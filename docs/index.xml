@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>类加载过程</title>
+      <link>https://dengzhao7053.github.io/blogs/post/classload/</link>
+      <pubDate>Tue, 14 Apr 2020 12:45:19 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/classload/</guid>
+      <description>&lt;p&gt;这篇文章我们来了解Java虚拟机中类加载的全过程，即加载、验证、准备、解析和初始化这五个阶段所执行的具体动作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>对象的创建</title>
       <link>https://dengzhao7053.github.io/blogs/post/creatobject/</link>
       <pubDate>Mon, 30 Mar 2020 11:51:37 +0800</pubDate>
@@ -49,7 +58,7 @@
       <pubDate>Wed, 01 Jan 2020 20:49:06 +0800</pubDate>
       
       <guid>https://dengzhao7053.github.io/blogs/about/</guid>
-      <description></description>
+      <description>记录是为了更好的记忆。</description>
     </item>
     
   </channel>
