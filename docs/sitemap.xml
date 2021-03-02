@@ -43,12 +43,37 @@
   </url>
   
   <url>
-    <loc>https://dengzhao7053.github.io/blogs/tags/classload/</loc>
-    <lastmod>2020-04-15T23:48:00+08:00</lastmod>
+    <loc>https://dengzhao7053.github.io/blogs/tags/gc/</loc>
+    <lastmod>2020-04-17T23:41:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/series/gc/</loc>
+    <lastmod>2020-04-17T23:41:42+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://dengzhao7053.github.io/blogs/categories/java/</loc>
+    <lastmod>2020-04-17T23:41:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/series/</loc>
+    <lastmod>2020-04-17T23:41:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/post/gc-method/</loc>
+    <lastmod>2020-04-17T23:41:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/post/gc-obj-decision-method/</loc>
+    <lastmod>2020-04-16T23:33:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/tags/classload/</loc>
     <lastmod>2020-04-15T23:48:00+08:00</lastmod>
   </url>
   
@@ -68,6 +93,26 @@
   </url>
   
   <url>
+    <loc>https://dengzhao7053.github.io/blogs/post/memory/</loc>
+    <lastmod>2020-04-02T23:16:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/tags/memory/</loc>
+    <lastmod>2020-04-02T23:16:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/post/jmm/</loc>
+    <lastmod>2020-04-01T23:00:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dengzhao7053.github.io/blogs/tags/jmm/</loc>
+    <lastmod>2020-04-01T23:00:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dengzhao7053.github.io/blogs/post/creatobject/</loc>
     <lastmod>2020-03-30T11:51:37+08:00</lastmod>
   </url>
@@ -84,11 +129,6 @@
   
   <url>
     <loc>https://dengzhao7053.github.io/blogs/tags/hugo/</loc>
-    <lastmod>2020-01-01T21:53:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dengzhao7053.github.io/blogs/series/</loc>
     <lastmod>2020-01-01T21:53:35+08:00</lastmod>
   </url>
   

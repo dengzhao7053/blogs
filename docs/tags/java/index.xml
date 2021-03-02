@@ -26,6 +26,24 @@
     </item>
     
     <item>
+      <title>Java内存区域</title>
+      <link>https://dengzhao7053.github.io/blogs/post/memory/</link>
+      <pubDate>Thu, 02 Apr 2020 23:16:12 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/memory/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;虚拟机在执行&lt;code&gt;Java&lt;/code&gt;程序的过程中会把它所管理的内存划分为若干个不同的数据区域，这些数据区域可以分为两个部分：一部分是线程共享的，一部分是线程私有的。其中，线程私有的数据区包括虚拟机栈、本地方法栈和程序计数器。线程共享的数据区具体包括&lt;code&gt;Java&lt;/code&gt;堆和方法区两个区域。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java内存模型</title>
+      <link>https://dengzhao7053.github.io/blogs/post/jmm/</link>
+      <pubDate>Wed, 01 Apr 2020 23:00:22 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/jmm/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Java Memory Model&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>对象的创建</title>
       <link>https://dengzhao7053.github.io/blogs/post/creatobject/</link>
       <pubDate>Mon, 30 Mar 2020 11:51:37 +0800</pubDate>

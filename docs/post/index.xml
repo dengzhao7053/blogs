@@ -17,6 +17,24 @@
     </item>
     
     <item>
+      <title>垃圾收集算法</title>
+      <link>https://dengzhao7053.github.io/blogs/post/gc-method/</link>
+      <pubDate>Fri, 17 Apr 2020 23:41:42 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/gc-method/</guid>
+      <description>&lt;p&gt;本文介绍常见的垃圾收集算法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GC对象的判定方法</title>
+      <link>https://dengzhao7053.github.io/blogs/post/gc-obj-decision-method/</link>
+      <pubDate>Thu, 16 Apr 2020 23:33:38 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/gc-obj-decision-method/</guid>
+      <description>&lt;p&gt;在堆里面存放着&lt;code&gt;Java&lt;/code&gt;世界中几乎所有的对象实例，垃圾收集器在对堆进行回收前，第一件事情就是要确定这些对象之中哪些还“存活”着，哪些已经死去。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>类加载器的双亲委派模型</title>
       <link>https://dengzhao7053.github.io/blogs/post/clsload2/</link>
       <pubDate>Wed, 15 Apr 2020 23:48:00 +0800</pubDate>
@@ -32,6 +50,24 @@
       
       <guid>https://dengzhao7053.github.io/blogs/post/classload/</guid>
       <description>&lt;p&gt;这篇文章我们来了解&lt;code&gt;Java&lt;/code&gt;虚拟机中类加载的全过程，即加载、验证、准备、解析和初始化这五个阶段所执行的具体动作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java内存区域</title>
+      <link>https://dengzhao7053.github.io/blogs/post/memory/</link>
+      <pubDate>Thu, 02 Apr 2020 23:16:12 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/memory/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;虚拟机在执行&lt;code&gt;Java&lt;/code&gt;程序的过程中会把它所管理的内存划分为若干个不同的数据区域，这些数据区域可以分为两个部分：一部分是线程共享的，一部分是线程私有的。其中，线程私有的数据区包括虚拟机栈、本地方法栈和程序计数器。线程共享的数据区具体包括&lt;code&gt;Java&lt;/code&gt;堆和方法区两个区域。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java内存模型</title>
+      <link>https://dengzhao7053.github.io/blogs/post/jmm/</link>
+      <pubDate>Wed, 01 Apr 2020 23:00:22 +0800</pubDate>
+      
+      <guid>https://dengzhao7053.github.io/blogs/post/jmm/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Java Memory Model&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
