@@ -56,7 +56,7 @@
 <p><code>Java</code>虚拟机把描述类的数据从<code>Class</code>文件加载到内存，并对数据进行校验、转换解析和初始化，最终形成可以被虚拟机直接使用的Java类型，这个过程被称作虚拟机的类加载机制。与那些在编译时需要进行连接的语言不同，在<code>Java</code>语言里面，类型的加载、连接和初始化过程都是在程序运行期间完成的。这种策略让<code>Java</code>语言进行提前编译会面临额外的困难，也会让类加载时稍微增加一些性能开销，但是却为<code>Java</code>应用提供了极高的扩展性和灵活性。</p>
 <h2 id="1-类加载的时机">1. 类加载的时机</h2>
 <p>一个类型从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期将会经历加载<code>(Loading)</code>、验证<code>(Verification)</code>、准备<code>(Preparation)</code>、解析<code>(Resolution)</code>、初始化<code>(Initialization)</code>、使用<code>(Using)</code>和卸载<code>(Unloading)</code>七个阶段，其中验证、准备、解析三个部分统称为连接<code>(Linking)</code>。这七个阶段的发生顺序如图：
-<img src="http://localhost:1313/blogs/classload.png" alt="流程">
+<img src="https://dengzhao7053.github.io/blogs/classload.png" alt="流程">
 图中，加载、验证、准备、初始化和卸载这五个阶段的顺序是确定的，类型的加载过程必须按照这个顺序按部就班地开始，而解析阶段则不一定：它在某些情况下可以在初始化阶段之后再开始，这就是为了支持<code>Java</code>语言的运行时绑定特性(也称为动态绑定或晚期绑定)。请注意，这里写的是按部就班的开始，而不是按部就班地进行或者按部就班地完成，强调这点是因为这些阶段通常都是互相交叉地混合进行的，会在一个阶段执行的过程中调用、激活另一个阶段。关于在什么情况下需要开始类加载过程的第一个阶段“加载”，《Java虚拟机规范》中并没有进行强制约束，这点可以交给虚拟机的具体实现来自有把握。但是对于初始化阶段，《Java虚拟机规范》则是严格规定了有且只有六种情况必须立即对类进行“初始化”(而加载、验证、准备自然需要在此之前)：</p>
 <p>1）遇到<code>new、getstatic、putstatic</code>或者<code>invokestatic</code>这四条字节码指令时，如果类型没有进行过初始化，则需要先触发其初始化阶段。能够生成这四条指令的典型<code>Java</code>代码场景有：</p>
 <ul>
